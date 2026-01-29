@@ -1,0 +1,13 @@
+itemGroup.FOX_ETERNITY_TAB=Fox Eternity
+
+# Blocks
+tile.basicNeutronCollector.name=Basic Neutron Collector
+tile.advancedNeutronCollector.name=Advanced Neutron Collector
+tile.hybridNeutronCollector.name=Hybrid Neutron Collector
+tile.ultimateNeutronCollector.name=Ultimate Neutron Collector
+tile.quantumNeutronCollector.name=Quantum Neutron Collector
+
+# Items
+
+# Tooltips
+tooltip.collector=§7Generates §3%s %s§7 in §3%s§7 ticks

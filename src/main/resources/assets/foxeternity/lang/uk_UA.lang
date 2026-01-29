@@ -1,0 +1,12 @@
+
+# Blocks
+tile.basicNeutronCollector.name=Базовий нейтронний колектор
+tile.advancedNeutronCollector.name=Розширений нейтронний колектор
+tile.hybridNeutronCollector.name=Гібридний нейтронний колектор
+tile.ultimateNeutronCollector.name=Ультимативний нейтронний колектор
+tile.quantumNeutronCollector.name=Квантовий нейтронний колектор
+
+# Items
+
+# Tooltips
+tooltip.collector=§7Генерує §3%s %s§7 за §3%s§7 тіків
