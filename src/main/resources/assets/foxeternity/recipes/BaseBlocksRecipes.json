@@ -1,0 +1,46 @@
+{
+  "crafts": [
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:neutronSynthesizer>",
+      "inputs": ["<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<ore:chestWood>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:basicNeutronCollector>",
+      "inputs": ["<Avaritia:Resource.3>", "<Avaritia:Resource.3>", "<Avaritia:Resource.3>",
+        "<Avaritia:Resource.3>", "<Avaritia:Neutron_Collector>", "<Avaritia:Resource.3>",
+        "<Avaritia:Resource.3>", "<Avaritia:Resource.3>", "<Avaritia:Resource.3>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:advancedNeutronCollector>",
+      "inputs": ["<Avaritia:Resource.4>", "<Avaritia:Resource.4>", "<Avaritia:Resource.4>",
+        "<Avaritia:Resource.4>", "<foxeternity:basicNeutronCollector>", "<Avaritia:Resource.4>",
+        "<Avaritia:Resource.4>", "<Avaritia:Resource.4>", "<Avaritia:Resource.4>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:hybridNeutronCollector>",
+      "inputs": ["<Avaritia:Neutron_Collector>", "<Avaritia:Resource.9>", "<Avaritia:Neutron_Collector>",
+        "<Avaritia:Resource.9>", "<foxeternity:advancedNeutronCollector>", "<Avaritia:Resource.9>",
+        "<Avaritia:Neutron_Collector>", "<Avaritia:Resource.9>", "<Avaritia:Neutron_Collector>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:ultimateNeutronCollector>",
+      "inputs": ["<ore:blockCosmicNeutronium>", "<Avaritia:Resource.9>", "<ore:blockCosmicNeutronium>",
+        "<Avaritia:Resource.9>", "<foxeternity:hybridNeutronCollector>", "<Avaritia:Resource.9>",
+        "<ore:blockCosmicNeutronium>", "<Avaritia:Resource.9>", "<ore:blockCosmicNeutronium>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:quantumNeutronCollector>",
+      "inputs": ["<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<foxeternity:ultimateNeutronCollector>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>"]
+    }
+  ]
+}

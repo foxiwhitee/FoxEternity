@@ -1,12 +1,13 @@
 package foxiwhitee.FoxEternity;
 
+import foxiwhitee.FoxEternity.blocks.BlockNeutronSynthesizer;
 import foxiwhitee.FoxEternity.blocks.collectors.*;
 import foxiwhitee.FoxEternity.config.ContentConfig;
 import foxiwhitee.FoxEternity.items.block.ItemBlockNeutronCollector;
+import foxiwhitee.FoxEternity.tile.TileNeutronSynthesizer;
 import foxiwhitee.FoxEternity.tile.collectors.*;
 import foxiwhitee.FoxLib.registries.RegisterUtils;
 import net.minecraft.block.Block;
-import net.minecraft.tileentity.TileEntity;
 
 public class ModBlocks {
     public static final Block basicNeutronCollector = new BlockBasicNeutronCollector("basicNeutronCollector");
@@ -15,8 +16,11 @@ public class ModBlocks {
     public static final Block ultimateNeutronCollector = new BlockUltimateNeutronCollector("ultimateNeutronCollector");
     public static final Block quantumNeutronCollector = new BlockQuantumNeutronCollector("quantumNeutronCollector");
 
+    public static final Block neutronSynthesizer = new BlockNeutronSynthesizer("neutronSynthesizer");
+
     public static void registerBlocks() {
         registerCollectors();
+        registerSynthesizer();
     }
 
     private static void registerCollectors() {
@@ -39,6 +43,13 @@ public class ModBlocks {
         if (ContentConfig.enableQuantumNeutronCollector) {
             RegisterUtils.registerBlock(quantumNeutronCollector, ItemBlockNeutronCollector.class);
             RegisterUtils.registerTile(TileQuantumNeutronCollector.class);
+        }
+    }
+
+    private static void registerSynthesizer() {
+        if (ContentConfig.enableNeutronSynthesizer) {
+            RegisterUtils.registerBlock(neutronSynthesizer);
+            RegisterUtils.registerTile(TileNeutronSynthesizer.class);
         }
     }
 

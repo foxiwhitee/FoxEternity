@@ -7,6 +7,7 @@ tile.hybridNeutronCollector.name=Hybrid Neutron Collector
 tile.ultimateNeutronCollector.name=Ultimate Neutron Collector
 tile.quantumNeutronCollector.name=Quantum Neutron Collector
 
+tile.neutronSynthesizer.name=Neutron Synthesizer
 # Items
 
 # Tooltips

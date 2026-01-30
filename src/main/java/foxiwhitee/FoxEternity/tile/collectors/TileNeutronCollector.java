@@ -6,7 +6,6 @@ import foxiwhitee.FoxLib.tile.event.TileEventType;
 import foxiwhitee.FoxLib.tile.inventory.FoxInternalInventory;
 import foxiwhitee.FoxLib.tile.inventory.InvOperation;
 import foxiwhitee.FoxLib.utils.helpers.InventoryUtils;
-import io.netty.buffer.ByteBuf;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -52,18 +51,6 @@ public abstract class TileNeutronCollector extends FoxBaseInvTile {
     public void readFromNBT_(NBTTagCompound data) {
         super.readFromNBT_(data);
         tick = data.getInteger("tick");
-    }
-
-    @TileEvent(TileEventType.CLIENT_NBT_WRITE)
-    public void writeToStream(ByteBuf data) {
-        data.writeInt(tick);
-    }
-
-    @TileEvent(TileEventType.CLIENT_NBT_READ)
-    public boolean readFromStream(ByteBuf data) {
-        int oldTick = this.tick;
-        this.tick = data.readInt();
-        return oldTick != this.tick;
     }
 
     @Override

@@ -19,4 +19,7 @@ public class ContentConfig {
 
     @ConfigValue(category = "Content", desc = "Enable Quantum Neutron Collector?")
     public static boolean enableQuantumNeutronCollector = true;
+
+    @ConfigValue(category = "Content", desc = "Enable Neutron Synthesizer?")
+    public static boolean enableNeutronSynthesizer = true;
 }
