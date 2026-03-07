@@ -1,4 +1,4 @@
-package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemlers;
+package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemblers;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileNeutronAssembler;

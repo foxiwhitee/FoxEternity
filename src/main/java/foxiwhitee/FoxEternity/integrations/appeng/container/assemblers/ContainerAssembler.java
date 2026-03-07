@@ -1,4 +1,4 @@
-package foxiwhitee.FoxEternity.integrations.appeng.container.assemlers;
+package foxiwhitee.FoxEternity.integrations.appeng.container.assemblers;
 
 import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileAssembler;
 import foxiwhitee.FoxEternity.utils.Filters;

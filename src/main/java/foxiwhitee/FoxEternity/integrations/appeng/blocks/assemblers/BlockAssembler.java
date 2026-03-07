@@ -1,4 +1,4 @@
-package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemlers;
+package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemblers;
 
 import foxiwhitee.FoxEternity.FECore;
 import foxiwhitee.FoxEternity.integrations.appeng.blocks.AppliedBlock;

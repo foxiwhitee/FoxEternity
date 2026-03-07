@@ -1,7 +1,7 @@
-package foxiwhitee.FoxEternity.integrations.appeng.client.gui.assemlers;
+package foxiwhitee.FoxEternity.integrations.appeng.client.gui.assemblers;
 
 import foxiwhitee.FoxEternity.client.gui.FEGui;
-import foxiwhitee.FoxEternity.integrations.appeng.container.assemlers.ContainerAssembler;
+import foxiwhitee.FoxEternity.integrations.appeng.container.assemblers.ContainerAssembler;
 
 @SuppressWarnings("unused")
 public class GuiBigAssembler extends FEGui {

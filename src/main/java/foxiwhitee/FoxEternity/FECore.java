@@ -7,7 +7,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import foxiwhitee.FoxEternity.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
 import static foxiwhitee.FoxEternity.FECore.*;
@@ -20,11 +19,10 @@ public class FECore {
         VERSION = "1.0.0",
         DEPEND = "required-after:foxlib;required-after:Avaritia;after:appliedenergistics2;";
 
-
     public static final CreativeTabs TAB = new CreativeTabs("FOX_ETERNITY_TAB") {
         @Override
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(Blocks.bedrock);
+            return Item.getItemFromBlock(ModBlocks.hybridNeutronCollector);
         }
     };
 
