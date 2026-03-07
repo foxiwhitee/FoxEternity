@@ -1,10 +1,10 @@
 package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemlers;
 
 import foxiwhitee.FoxEternity.FECore;
-import foxiwhitee.FoxEternity.blocks.AvaritiaBlock;
+import foxiwhitee.FoxEternity.integrations.appeng.blocks.AppliedBlock;
 import net.minecraft.tileentity.TileEntity;
 
-public abstract class BlockAssembler extends AvaritiaBlock {
+public abstract class BlockAssembler extends AppliedBlock {
     public BlockAssembler(String name, Class<? extends TileEntity> tileEntityClass) {
         super(name, tileEntityClass);
         setLightLevel(1F);

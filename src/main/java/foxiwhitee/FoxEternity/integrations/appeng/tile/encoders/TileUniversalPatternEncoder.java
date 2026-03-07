@@ -18,7 +18,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.ArrayList;
@@ -168,17 +167,4 @@ public abstract class TileUniversalPatternEncoder extends TileAENetworkInvOrient
     protected abstract Item getEncodedPattern();
 
     public abstract void updateRecipe();
-
-    @Override
-    public void getDrops(World w, int x, int y, int z, List<ItemStack> drops) {
-        super.getDrops(w, x, y, z, drops);
-        if (drops.isEmpty()) {
-            for (int i = 0; i < inventory.getSizeInventory(); i++) {
-                ItemStack stack = inventory.getStackInSlot(i);
-                if (stack != null) {
-                    drops.add(stack);
-                }
-            }
-        }
-    }
 }

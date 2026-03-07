@@ -57,14 +57,6 @@ public abstract class TileAssembler extends TilePatternMachine {
     @Override
     public void getDrops(World w, int x, int y, int z, List<ItemStack> drops) {
         super.getDrops(w, x, y, z, drops);
-        if (drops.isEmpty()) {
-            for (int i = 0; i < getPatterns().getSizeInventory(); i++) {
-                ItemStack stack = getPatterns().getStackInSlot(i);
-                if (stack != null) {
-                    drops.add(stack);
-                }
-            }
-        }
         for (IAEStack<?> stack : needSend) {
             if (stack instanceof IAEItemStack iaeItemStack) {
                 drops.add(iaeItemStack.getItemStack());
