@@ -22,4 +22,10 @@ public class ContentConfig {
 
     @ConfigValue(category = "Content", desc = "Enable Neutron Synthesizer?")
     public static boolean enableNeutronSynthesizer = true;
+
+    @ConfigValue(category = "Content", desc = "Enable Neutron Assembler?")
+    public static boolean enableNeutronAssembler = true;
+
+    @ConfigValue(category = "Content", desc = "Enable Big Molecular Assembler?")
+    public static boolean enableBigMolecularAssembler = true;
 }

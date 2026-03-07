@@ -8,7 +8,17 @@ tile.ultimateNeutronCollector.name=Ultimate Neutron Collector
 tile.quantumNeutronCollector.name=Quantum Neutron Collector
 
 tile.neutronSynthesizer.name=Neutron Synthesizer
+
+tile.neutronEncoder.name=Neutronium Compressor Pattern Encoder
+tile.bigEncoder.name=Dire Crafting Pattern Encoder
+
+tile.neutronAssembler.name=Neutronium Compressor Assembler
+tile.bigAssembler.name=Dire Crafting Assembler
 # Items
+item.encodedNeutronPattern.name=Encoded Neutron Compressor Pattern
+item.encodedBigPattern.name=Encoded Big Pattern
 
 # Tooltips
 tooltip.collector=§7Generates §3%s %s§7 in §3%s§7 ticks
+tooltip.encode=Encode
+tooltip.assembler.description=§7Crafting §3%s§7 crafts per tick

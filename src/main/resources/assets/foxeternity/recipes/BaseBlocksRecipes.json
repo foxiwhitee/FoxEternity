@@ -41,6 +41,34 @@
       "inputs": ["<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>",
         "<ore:blockCosmicNeutronium>", "<foxeternity:ultimateNeutronCollector>", "<ore:blockCosmicNeutronium>",
         "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>", "<ore:blockCosmicNeutronium>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:bigEncoder>",
+      "inputs": ["<ore:blockCrystalMatrix>", "<appliedenergistics2:item.ItemMultiPart.340>", "<ore:blockCrystalMatrix>",
+        "<ore:blockCrystalMatrix>", "<appliedenergistics2:tile.BlockInterface>", "<ore:blockCrystalMatrix>",
+        "<ore:blockCrystalMatrix>", "<Avaritia:Dire_Crafting>", "<ore:blockCrystalMatrix>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:neutronEncoder>",
+      "inputs": ["<ore:blockCosmicNeutronium>", "<appliedenergistics2:item.ItemMultiPart.340>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<appliedenergistics2:tile.BlockInterface>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<Avaritia:Neutronium_Compressor>", "<ore:blockCosmicNeutronium>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:bigAssembler>",
+      "inputs": ["<ore:blockCrystalMatrix>", "<appliedenergistics2:tile.BlockMolecularAssembler>", "<ore:blockCrystalMatrix>",
+        "<ore:blockCrystalMatrix>", "<appliedenergistics2:tile.BlockInterface>", "<ore:blockCrystalMatrix>",
+        "<ore:blockCrystalMatrix>", "<Avaritia:Dire_Crafting>", "<ore:blockCrystalMatrix>"]
+    },
+    {
+      "type": "workbenchShaped",
+      "output": "<foxeternity:neutronAssembler>",
+      "inputs": ["<ore:blockCosmicNeutronium>", "<appliedenergistics2:tile.BlockMolecularAssembler>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<appliedenergistics2:tile.BlockInterface>", "<ore:blockCosmicNeutronium>",
+        "<ore:blockCosmicNeutronium>", "<Avaritia:Neutronium_Compressor>", "<ore:blockCosmicNeutronium>"]
     }
   ]
 }

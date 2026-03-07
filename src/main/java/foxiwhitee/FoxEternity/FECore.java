@@ -18,7 +18,7 @@ public class FECore {
         MODID = "foxeternity",
         MODNAME = "FoxEternity",
         VERSION = "1.0.0",
-        DEPEND = "required-after:foxlib;";
+        DEPEND = "required-after:foxlib;required-after:Avaritia;after:appliedenergistics2;";
 
 
     public static final CreativeTabs TAB = new CreativeTabs("FOX_ETERNITY_TAB") {
@@ -27,9 +27,6 @@ public class FECore {
             return Item.getItemFromBlock(Blocks.bedrock);
         }
     };
-
-    @Mod.Instance(MODID)
-    public static FECore instance;
 
     @SidedProxy(clientSide = "foxiwhitee.FoxEternity.proxy.ClientProxy", serverSide = "foxiwhitee.FoxEternity.proxy.CommonProxy")
     public static CommonProxy proxy;

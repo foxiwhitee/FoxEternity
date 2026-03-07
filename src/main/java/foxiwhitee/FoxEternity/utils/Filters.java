@@ -1,15 +1,20 @@
 package foxiwhitee.FoxEternity.utils;
 
+import appeng.core.Api;
+import appeng.items.misc.ItemEncodedPattern;
 import fox.spiteful.avaritia.blocks.BlockNeutronCollector;
 import foxiwhitee.FoxEternity.api.IHasNeutronSynthesizerIntegration;
 import foxiwhitee.FoxLib.container.slots.SlotFiltered;
+import foxiwhitee.FoxLib.utils.helpers.ItemStackUtil;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 
 import java.util.function.Predicate;
 
 public enum Filters {
-    COLLECTOR("collectors", stack -> itemInstanceof(stack, IHasNeutronSynthesizerIntegration.class) || blockInstanceof(stack, BlockNeutronCollector.class));
+    COLLECTOR("collectors", stack -> itemInstanceof(stack, IHasNeutronSynthesizerIntegration.class) || blockInstanceof(stack, BlockNeutronCollector.class)),
+    PATTERNS("patterns", stack -> itemInstanceof(stack, ItemEncodedPattern.class)),
+    EMPTY_PATTERNS("patternsEmpty", stack -> ItemStackUtil.stackEquals(stack, Api.INSTANCE.definitions().materials().blankPattern().maybeStack(1).orNull()));
 
     private final String filter;
     Filters(String id, Predicate<ItemStack> filter) {

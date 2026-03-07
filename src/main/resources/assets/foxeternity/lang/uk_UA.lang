@@ -8,7 +8,16 @@ tile.quantumNeutronCollector.name=Квантовий нейтронний кол
 
 tile.neutronSynthesizer.name=Синтезатор нейтронію
 
+tile.neutronEncoder.name=Кодувальник шаблонів нейтроного компресора
+tile.bigEncoder.name=Кодувальник шаблонів жахливого верстаку
+
+tile.neutronAssembler.name=Асемблер нейтроного компресора
+tile.bigAssembler.name=Асемблер жахливого верстаку
 # Items
+item.encodedNeutronPattern.name=Закодований шаблон компресора нейтронія
+item.encodedBigPattern.name=Закодований великий шаблон
 
 # Tooltips
 tooltip.collector=§7Генерує §3%s %s§7 за §3%s§7 тіків
+tooltip.encode=Закодувати
+tooltip.assembler.description=§7Крафтить §3%s§7 крафтів за тік

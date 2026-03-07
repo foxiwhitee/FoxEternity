@@ -5,6 +5,9 @@ import foxiwhitee.FoxLib.config.ConfigValue;
 
 @Config(name = "FoxEternity", folder = "Fox-Mods")
 public class FEConfig {
+    @ConfigValue(desc = "Enable tooltips?")
+    public static boolean enableTooltips = true;
+
 
     @ConfigValue(category = "Collectors.Basic", name = "ticks", desc = "How many ticks will it take to generate the resource? (1 sec = 20 ticks)")
     public static int neutronCollectorBasicTicks = 6000;
@@ -43,4 +46,11 @@ public class FEConfig {
 
     @ConfigValue(category = "Synthesizer", name = "stackLimit", max = "64", desc = "Maximum number of collectors that fit in 1 slot")
     public static int neutronSynthesizerStackLimit = 64;
+
+
+    @ConfigValue(category = "Assemblers.Big", name = "speed", desc = "Number of items crafted at a time")
+    public static long bigAssemblerSpeed = 32000;
+
+    @ConfigValue(category = "Assemblers.Neutron", name = "speed", desc = "Number of items crafted at a time")
+    public static long neutronAssemblerSpeed = 128;
 }
