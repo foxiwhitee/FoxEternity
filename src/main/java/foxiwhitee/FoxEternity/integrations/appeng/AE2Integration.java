@@ -28,6 +28,7 @@ import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileNeutronAsse
 import foxiwhitee.FoxEternity.integrations.appeng.tile.encoders.TileBigEncoder;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.encoders.TileNeutronEncoder;
 import foxiwhitee.FoxLib.api.FoxLibApi;
+import foxiwhitee.FoxLib.items.ModItemBlock;
 import foxiwhitee.FoxLib.registries.RegisterUtils;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -48,14 +49,14 @@ public class AE2Integration implements IIntegration {
     public void preInit(FMLPreInitializationEvent paramFMLPreInitializationEvent) {
         if (ContentConfig.enableNeutronAssembler) {
             RegisterUtils.registerItem(encodedNeutronPattern);
-            RegisterUtils.registerBlock(neutronEncoder);
+            RegisterUtils.registerBlock(neutronEncoder, ModItemBlock.class);
             RegisterUtils.registerBlock(ItemBlockAssembler.class, neutronAssembler);
             RegisterUtils.registerTile(TileNeutronEncoder.class);
             RegisterUtils.registerTile(TileNeutronAssembler.class);
         }
         if (ContentConfig.enableBigMolecularAssembler) {
             RegisterUtils.registerItem(encodedBigPattern);
-            RegisterUtils.registerBlock(bigEncoder);
+            RegisterUtils.registerBlock(bigEncoder, ModItemBlock.class);
             RegisterUtils.registerBlock(ItemBlockAssembler.class, bigAssembler);
             RegisterUtils.registerTile(TileBigEncoder.class);
             RegisterUtils.registerTile(TileBigAssembler.class);
