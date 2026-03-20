@@ -19,10 +19,10 @@ public class ItemBlockAssembler extends ModItemBlock {
     public void addInformation(ItemStack stack, EntityPlayer p_77624_2_, List<String> list, boolean p_77624_4_) {
         if (FEConfig.enableTooltips) {
             if (isBlock(AE2Integration.bigAssembler)) {
-                list.add(LocalizationUtils.localize("tooltip.assembler.description", FEConfig.bigAssemblerSpeed));
+                list.add(LocalizationUtils.localizeF("tooltip.assembler.description", FEConfig.bigAssemblerSpeed));
             }
             if (isBlock(AE2Integration.neutronAssembler)) {
-                list.add(LocalizationUtils.localize("tooltip.assembler.description", FEConfig.neutronAssemblerSpeed));
+                list.add(LocalizationUtils.localizeF("tooltip.assembler.description", FEConfig.neutronAssemblerSpeed));
             }
         }
     }

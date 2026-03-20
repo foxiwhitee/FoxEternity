@@ -1,9 +1,9 @@
 package foxiwhitee.FoxEternity.integrations.appeng.items.patterns;
 
 import appeng.api.networking.crafting.ICraftingPatternDetails;
+import appeng.helpers.UltimatePatternHelper;
 import appeng.items.misc.ItemEncodedPattern;
 import foxiwhitee.FoxEternity.FECore;
-import foxiwhitee.FoxEternity.integrations.appeng.helpers.AdvancedPatternHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
@@ -18,7 +18,7 @@ public class ItemEncodedBigPattern extends ItemEncodedPattern {
     @Override
     public ICraftingPatternDetails getPatternForItem(ItemStack is, World w) {
         try {
-            return new AdvancedPatternHelper(is, w, 9, 9);
+            return new UltimatePatternHelper(is);
         } catch (final Throwable t) {
             return null;
         }

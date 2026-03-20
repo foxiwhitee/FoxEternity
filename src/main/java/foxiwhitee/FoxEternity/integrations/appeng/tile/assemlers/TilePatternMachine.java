@@ -26,10 +26,10 @@ import appeng.tile.TileEvent;
 import appeng.tile.events.TileEventType;
 import appeng.tile.inventory.AppEngInternalInventory;
 import appeng.tile.inventory.InvOperation;
-import foxiwhitee.FoxEternity.integrations.appeng.helpers.CrafterHelper;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.TileAENetworkInvOrientable;
 import foxiwhitee.FoxLib.integration.applied.api.crafting.ICraftingCPUClusterAccessor;
 import foxiwhitee.FoxLib.integration.applied.api.crafting.IPreCraftingMedium;
+import foxiwhitee.FoxLib.integration.applied.helpers.AECrafterHelper;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
@@ -41,9 +41,6 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import javax.annotation.Nullable;
 import java.util.*;
-
-import static foxiwhitee.FoxEternity.integrations.appeng.helpers.CrafterHelper.calculateOutputs;
-import static foxiwhitee.FoxEternity.integrations.appeng.helpers.CrafterHelper.trySendItems;
 
 @SuppressWarnings("unused")
 public abstract class TilePatternMachine extends TileAENetworkInvOrientable implements ICraftingMachine, ICraftingProvider, IGridTickable, IInterfaceViewable, IPreCraftingMedium {
@@ -97,7 +94,7 @@ public abstract class TilePatternMachine extends TileAENetworkInvOrientable impl
             }
         }
         data.setLong("craftCount", craftCount);
-        CrafterHelper.writeToNbtNeedItems(data, this.needSend);
+        AECrafterHelper.writeToNbtNeedItems(data, this.needSend);
     }
 
     @TileEvent(TileEventType.WORLD_NBT_READ)
@@ -127,7 +124,7 @@ public abstract class TilePatternMachine extends TileAENetworkInvOrientable impl
             }
         }
         craftCount = data.getLong("craftCount");
-        CrafterHelper.readFromNbtNeedItems(data, this.needSend);
+        AECrafterHelper.readFromNbtNeedItems(data, this.needSend);
     }
 
     @Override
@@ -231,10 +228,10 @@ public abstract class TilePatternMachine extends TileAENetworkInvOrientable impl
     @Override
     public TickRateModulation tickingRequest(IGridNode node, int ticksSinceLastCall) {
         if (activePattern != null && needSend.isEmpty()) {
-            List<IAEStack<?>> outputs = calculateOutputs(activePattern, craftCount, craftingGrid);
+            List<IAEStack<?>> outputs = AECrafterHelper.calculateOutputs(activePattern, craftCount, craftingGrid);
             needSend.addAll(outputs);
         }
-        trySendItems(getProxy(), source, needSend);
+        AECrafterHelper.trySendItems(getProxy(), source, needSend);
         if (needSend.isEmpty()) {
             activePattern = null;
             craftCount = 0;
