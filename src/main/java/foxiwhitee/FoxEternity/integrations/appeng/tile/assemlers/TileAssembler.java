@@ -5,8 +5,8 @@ import appeng.api.networking.crafting.ICraftingPatternDetails;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.api.storage.data.IAEStack;
 import appeng.api.util.AECableType;
+import appeng.helpers.UltimatePatternHelper;
 import appeng.items.misc.ItemEncodedPattern;
-import foxiwhitee.FoxEternity.integrations.appeng.helpers.AdvancedPatternHelper;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -33,7 +33,7 @@ public abstract class TileAssembler extends TilePatternMachine {
 
     @Override
     protected boolean isValidCraft(ICraftingPatternDetails pattern) {
-        if (pattern instanceof AdvancedPatternHelper) {
+        if (pattern instanceof UltimatePatternHelper) {
             return getPattenClass().isAssignableFrom(Objects.requireNonNull(pattern.getPattern().getItem()).getClass());
         }
         return false;
