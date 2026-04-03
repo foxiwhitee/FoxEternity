@@ -2,9 +2,9 @@ package foxiwhitee.FoxEternity.integrations.appeng.client.gui.encoders;
 
 import foxiwhitee.FoxEternity.client.gui.FEGui;
 import foxiwhitee.FoxEternity.integrations.appeng.container.encoders.ContainerUniversalEncoder;
-import foxiwhitee.FoxEternity.integrations.appeng.network.packets.C2SEncodePacket;
-import foxiwhitee.FoxEternity.integrations.appeng.tile.encoders.TileUniversalPatternEncoder;
 import foxiwhitee.FoxLib.client.gui.buttons.NoTextureButton;
+import foxiwhitee.FoxLib.integration.applied.network.packets.C2SEncodePacket;
+import foxiwhitee.FoxLib.integration.applied.tile.TileUniversalPatternEncoder;
 import foxiwhitee.FoxLib.network.NetworkManager;
 import net.minecraft.client.gui.GuiButton;
 

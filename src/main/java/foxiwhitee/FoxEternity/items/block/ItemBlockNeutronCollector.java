@@ -18,6 +18,7 @@ public class ItemBlockNeutronCollector extends ModItemBlock implements IHasNeutr
 
     public ItemBlockNeutronCollector(Block b) {
         super(b);
+        this.enableTooltips = FEConfig.enableTooltips;
         if (isBlock(ModBlocks.basicNeutronCollector)) {
             this.ticks = FEConfig.neutronCollectorBasicTicks;
             this.production = FEConfig.neutronCollectorBasicProduction;

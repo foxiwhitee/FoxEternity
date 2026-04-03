@@ -3,6 +3,7 @@ package foxiwhitee.FoxEternity.integrations.appeng.tile.encoders;
 import fox.spiteful.avaritia.crafting.CompressorManager;
 import fox.spiteful.avaritia.crafting.CompressorRecipe;
 import foxiwhitee.FoxEternity.integrations.appeng.AE2Integration;
+import foxiwhitee.FoxLib.integration.applied.tile.TileUniversalPatternEncoder;
 import foxiwhitee.FoxLib.utils.helpers.ItemStackUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -14,6 +15,11 @@ import java.util.List;
 public class TileNeutronEncoder extends TileUniversalPatternEncoder {
     public TileNeutronEncoder() {
         super(1);
+    }
+
+    @Override
+    protected ItemStack getItemFromTile(Object o) {
+        return new ItemStack(AE2Integration.neutronEncoder);
     }
 
     @Override

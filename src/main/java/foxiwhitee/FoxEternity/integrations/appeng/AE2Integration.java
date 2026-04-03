@@ -22,7 +22,6 @@ import foxiwhitee.FoxEternity.integrations.appeng.container.encoders.ContainerNe
 import foxiwhitee.FoxEternity.integrations.appeng.items.block.ItemBlockAssembler;
 import foxiwhitee.FoxEternity.integrations.appeng.items.patterns.ItemEncodedBigPattern;
 import foxiwhitee.FoxEternity.integrations.appeng.items.patterns.ItemEncodedNeutronPattern;
-import foxiwhitee.FoxEternity.integrations.appeng.network.packets.C2SEncodePacket;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileBigAssembler;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileNeutronAssembler;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.encoders.TileBigEncoder;
@@ -70,7 +69,6 @@ public class AE2Integration implements IIntegration {
                 .register(BlockNeutronEncoder.class, TileNeutronEncoder.class, ContainerNeutronEncoder.class)
                 .register(BlockBigAssembler.class, TileBigAssembler.class, ContainerAssembler.class, "GuiBigAssembler")
                 .register(BlockNeutronAssembler.class, TileNeutronAssembler.class, ContainerAssembler.class, "GuiNeutronAssembler");
-        FoxLibApi.instance.registries().registerPacket().register(C2SEncodePacket.class);
         if (ContentConfig.enableNeutronAssembler) {
             Api.INSTANCE.registries().interfaceTerminal().register(TileNeutronAssembler.class);
         }
