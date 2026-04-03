@@ -16,7 +16,7 @@ public class FECore {
     public static final String
         MODID = "foxeternity",
         MODNAME = "FoxEternity",
-        VERSION = "1.0.1",
+        VERSION = "1.0.2",
         DEPEND = "required-after:foxlib;required-after:Avaritia;after:appliedenergistics2;";
 
     public static final CreativeTabs TAB = new CreativeTabs("FOX_ETERNITY_TAB") {
