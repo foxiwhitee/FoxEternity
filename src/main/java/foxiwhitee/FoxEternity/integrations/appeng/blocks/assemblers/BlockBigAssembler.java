@@ -14,7 +14,7 @@ public class BlockBigAssembler extends BlockAssembler {
 
     public BlockBigAssembler(String name) {
         super(name, TileBigAssembler.class);
-        super.renderId = renderId;
+        setModel(renderId);
     }
 
     @Override

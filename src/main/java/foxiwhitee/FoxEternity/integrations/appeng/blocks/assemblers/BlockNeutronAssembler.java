@@ -14,7 +14,7 @@ public class BlockNeutronAssembler extends BlockAssembler {
 
     public BlockNeutronAssembler(String name) {
         super(name, TileNeutronAssembler.class);
-        super.renderId = renderId;
+        setModel(renderId);
     }
 
     @Override
