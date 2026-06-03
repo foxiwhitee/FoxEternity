@@ -7,8 +7,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-import static foxiwhitee.FoxEternity.utils.Filters.EMPTY_PATTERNS;
-import static foxiwhitee.FoxEternity.utils.Filters.PATTERNS;
+import static foxiwhitee.FoxEternity.integrations.appeng.util.AppengFilters.EMPTY_PATTERNS;
+import static foxiwhitee.FoxEternity.integrations.appeng.util.AppengFilters.PATTERNS;
 
 public class ContainerBigEncoder extends ContainerUniversalEncoder {
     public ContainerBigEncoder(EntityPlayer player, TileBigEncoder tileEntity) {
