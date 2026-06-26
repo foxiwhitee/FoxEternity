@@ -4,8 +4,8 @@ import foxiwhitee.FoxEternity.ModBlocks;
 import foxiwhitee.FoxEternity.api.IHasNeutronSynthesizerIntegration;
 import foxiwhitee.FoxEternity.config.FEConfig;
 import foxiwhitee.FoxLib.items.ModItemBlock;
-import foxiwhitee.FoxLib.recipes.json.RecipeUtils;
-import foxiwhitee.FoxLib.utils.helpers.LocalizationUtils;
+import foxiwhitee.FoxLib.json.core.JsonUtils;
+import foxiwhitee.FoxLib.utils.common.LocalizationUtils;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -46,7 +46,7 @@ public class ItemBlockNeutronCollector extends ModItemBlock implements IHasNeutr
     }
 
     private ItemStack getProduction(String name) {
-        return RecipeUtils.getItemStack(name, false);
+        return JsonUtils.parseItemStackString(name, false);
     }
 
     @Override

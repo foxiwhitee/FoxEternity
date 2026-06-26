@@ -1,7 +1,8 @@
 package foxiwhitee.FoxEternity;
 
-import foxiwhitee.FoxLib.recipes.json.annotations.RecipesLocation;
+import foxiwhitee.FoxLib.json.recipes.annotations.RecipesLocation;
 
+@SuppressWarnings("unused")
 public class ModRecipes {
 
     @RecipesLocation(modId = "foxeternity")

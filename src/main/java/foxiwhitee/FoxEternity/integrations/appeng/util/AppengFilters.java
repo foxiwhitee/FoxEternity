@@ -3,7 +3,7 @@ package foxiwhitee.FoxEternity.integrations.appeng.util;
 import appeng.core.Api;
 import appeng.items.misc.ItemEncodedPattern;
 import foxiwhitee.FoxLib.container.slots.SlotFiltered;
-import foxiwhitee.FoxLib.utils.helpers.ItemStackUtil;
+import foxiwhitee.FoxLib.utils.inventory.ItemStackUtil;
 import net.minecraft.item.ItemStack;
 
 import java.util.function.Predicate;

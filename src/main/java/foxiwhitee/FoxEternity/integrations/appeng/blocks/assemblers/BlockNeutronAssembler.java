@@ -3,7 +3,7 @@ package foxiwhitee.FoxEternity.integrations.appeng.blocks.assemblers;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import foxiwhitee.FoxEternity.config.FEConfig;
 import foxiwhitee.FoxEternity.integrations.appeng.tile.assemlers.TileNeutronAssembler;
-import foxiwhitee.FoxLib.utils.helpers.LocalizationUtils;
+import foxiwhitee.FoxLib.utils.common.LocalizationUtils;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 

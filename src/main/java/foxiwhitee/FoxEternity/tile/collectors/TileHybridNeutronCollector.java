@@ -1,7 +1,7 @@
 package foxiwhitee.FoxEternity.tile.collectors;
 
 import foxiwhitee.FoxEternity.config.FEConfig;
-import foxiwhitee.FoxLib.recipes.json.RecipeUtils;
+import foxiwhitee.FoxLib.json.core.JsonUtils;
 import net.minecraft.item.ItemStack;
 
 public class TileHybridNeutronCollector extends TileNeutronCollector {
@@ -13,7 +13,7 @@ public class TileHybridNeutronCollector extends TileNeutronCollector {
 
     private static ItemStack getProduction() {
         if (production == null) {
-            production = RecipeUtils.getItemStack(FEConfig.neutronCollectorHybridProduction, false);
+            production = JsonUtils.parseItemStackString(FEConfig.neutronCollectorHybridProduction, false);
         }
         return production;
     }

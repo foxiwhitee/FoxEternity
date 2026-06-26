@@ -8,8 +8,8 @@ import foxiwhitee.FoxLib.tile.event.TileEvent;
 import foxiwhitee.FoxLib.tile.event.TileEventType;
 import foxiwhitee.FoxLib.tile.inventory.FoxInternalInventory;
 import foxiwhitee.FoxLib.tile.inventory.InvOperation;
-import foxiwhitee.FoxLib.utils.helpers.InventoryUtils;
-import foxiwhitee.FoxLib.utils.helpers.ItemStackUtil;
+import foxiwhitee.FoxLib.utils.inventory.InventoryUtils;
+import foxiwhitee.FoxLib.utils.inventory.ItemStackUtil;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -36,6 +36,7 @@ public class TileNeutronSynthesizer extends FoxBaseInvTile {
     }
 
     @TileEvent(TileEventType.TICK)
+    @SuppressWarnings("unused")
     public void tick() {
         if (worldObj.isRemote) {
             return;

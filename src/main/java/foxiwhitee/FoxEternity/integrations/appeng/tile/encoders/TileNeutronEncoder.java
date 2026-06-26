@@ -4,7 +4,7 @@ import fox.spiteful.avaritia.crafting.CompressorManager;
 import fox.spiteful.avaritia.crafting.CompressorRecipe;
 import foxiwhitee.FoxEternity.integrations.appeng.AE2Integration;
 import foxiwhitee.FoxLib.integration.applied.tile.TileUniversalPatternEncoder;
-import foxiwhitee.FoxLib.utils.helpers.ItemStackUtil;
+import foxiwhitee.FoxLib.utils.inventory.ItemStackUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
