@@ -24,6 +24,7 @@ public class TileNeutronSynthesizer extends FoxBaseInvTile {
     private int[] ticks, ticksNeed;
 
     public TileNeutronSynthesizer() {
+        dropInventory.add(collectors);
         this.slots = new int[inventory.getSizeInventory()];
         for (int i = 0; i < this.inventory.getSizeInventory(); i++) {
             slots[i] = i;
